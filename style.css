@@ -79,9 +79,10 @@ figcaption {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px) and (min-width: 700px){
     .main-container {
         flex-direction: column-reverse;
+        margin: auto 15%;
     }
     #sub-container-1 {
         text-align: center;
@@ -100,4 +101,27 @@ figcaption {
         flex-direction: column;
     }
     
+}
+
+@media only screen and (max-width: 699px) {
+    .main-container {
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    #sub-container-1 {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    #sub-container-2 {
+        width: 100%;
+    }
+
+    #sub-container-2 img {
+        width: 100%;
+    }
+
+    #stats-container {
+        flex-direction: column;
+    }
 }
